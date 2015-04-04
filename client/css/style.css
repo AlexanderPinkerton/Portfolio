@@ -41,14 +41,16 @@ html, body{ background-color:#1a948d; }
 
 body
 {
-	background-image: url('background.jpg');
+	/*background-image: url('background.jpg');*/
+	background-color: #080808;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width:100%;
 	background-size:cover;
 	height:100%;
 	min-height:1000px;
-	overflow:hidden;
+	overflow-x:hidden;
+	/*overflow:hidden;*/
 	font-family: 'quicksandlight', Helvetica, Arial;
 	color:#FFFFFF;
 	text-shadow: -1px -1px 4px rgba(0, 0, 0, .35);
@@ -99,6 +101,37 @@ a:hover
 	color:rgba( 255, 255, 255, 1 );
 }
 
+/*================================================================================================================================*/
+
+
+.infoPane
+{
+	width: 1000px;
+	height: 500px;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #4F034F 0%, #59005C 50%, #87016D 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #4F034F 0%, #59005C 50%, #87016D 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #4F034F 0%, #59005C 50%, #87016D 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4F034F), color-stop(0.5, #59005C), color-stop(1, #87016D));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #4F034F 0%, #59005C 50%, #87016D 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #4F034F 0%, #59005C 50%, #87016D 100%);
+
+}
+
+.test
+{
+	height: 5000px;
+}
 
 
 /*================================================================================================================================*/
