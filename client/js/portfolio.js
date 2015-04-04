@@ -5,7 +5,7 @@ Template.carousel.helpers({
 
 Template.carousel.events({
 
-'click .carouselItemInner' : function (e) {
+'click .carouselItem' : function (e) {
 		console.log(e.target)        
     }
 
