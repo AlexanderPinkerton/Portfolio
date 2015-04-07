@@ -32,6 +32,11 @@
 		var counter = Object.create(fps_counter);
 		
 		
+
+		//var imageSources = ["background.png","cerebro.png","3","4","5"];
+		//var imageContainers = [];
+
+
 		
 		$(document).ready( init )
 		
@@ -47,15 +52,36 @@
 			radius = Math.round( (300) / Math.tan( Math.PI / itemLength ) );
 			
 			// set container 3d props
-			TweenMax.set(container, {perspective:600})
+			TweenMax.set(container, {perspective:1000})
 			TweenMax.set(carousel, {z:-(radius)})
 			
 			// create carousel item props
 			
 			for ( var i = 0; i < itemLength; i++ )
 			{
+				//var img = new Image();
+				//img.src = imageSources[i]
 				var $item = item.eq(i);
 				var $block = $item.find('.carouselItemInner');
+				//imageContainers[i] = $block;
+
+				/*
+				img.onload = function(){
+ 				 // image  has been loaded
+ 				 	$block.css("width",img.width);
+					$block.css("height",img.height);
+					console.log(i);
+				};
+				*/
+
+				/*
+				var timer = window.setTimeout(function(){
+					$block.css("width",img.width);
+					$block.css("height",img.height)
+				}, 500);
+				*/
+				//$block.css("width",img.width);
+				//$block.css("height",img.height)
 				
         //thanks @chrisgannon!        
         TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
@@ -65,7 +91,15 @@
 			
 			// set mouse x and y props and looper ticker
 			window.addEventListener( "mousemove", onMouseMove, false );
-			ticker = setInterval( looper, 1000/60 );			
+			ticker = setInterval( looper, 1000/60 );	
+
+
+
+
+
+
+
+
 		}
 		
 		function animateIn( $item, $block )
