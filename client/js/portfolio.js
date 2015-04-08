@@ -9,8 +9,6 @@ Template.carousel.events({
 		console.log(e.target)        
     }
 
-
-
 });
 
 
