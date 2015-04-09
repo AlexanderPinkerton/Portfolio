@@ -124,7 +124,7 @@
 		function onMouseMove(event)
 		{
 			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .0015;
-			mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
+			//mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
 			mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 0);
 		}
 		

@@ -10,13 +10,13 @@ Template.carousel.events({
 		$(".infoItem").css("visibility","hidden");
 		switch(e.currentTarget.id) {
     	case "item1":
-        	$("#text1").css("visibility","visible");
+        	$("#app1").css("visibility","visible");
         break;
     	case "item2":
-        	$("#text2").css("visibility","visible");
+        	$("#app2").css("visibility","visible");
         break;
         case "item3":
-        	$("#text3").css("visibility","visible");
+        	$("#app3").css("visibility","visible");
         break;
 		}
 
