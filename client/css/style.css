@@ -42,24 +42,7 @@ html, body{ background-color:#1a948d; }
 body
 {
 
-	/* IE10 Consumer Preview */ 
-	background-image: -ms-linear-gradient(top, #2B2B2B 0%, #000000 100%);
-
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top, #2B2B2B 0%, #000000 100%);
-
-	/* Opera */ 
-	background-image: -o-linear-gradient(top, #2B2B2B 0%, #000000 100%);
-
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2B2B2B), color-stop(1, #000000));
-
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top, #2B2B2B 0%, #000000 100%);
-
-	/* W3C Markup, IE10 Release Preview */ 
-	background-image: linear-gradient(to bottom, #2B2B2B 0%, #000000 100%);
-
+	background-image: url("glow.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	width:100%;
@@ -130,29 +113,30 @@ a:hover
 {
 	position: static;
 	height: 75px;
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(top, #4F4F4F 0%, #000000 100%);
+    
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top, #4F4F4F 0%, #000000 100%);
 
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top, #4F4F4F 0%, #000000 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #4F4F4F 0%, #000000 100%);
 
-/* Opera */ 
-background-image: -o-linear-gradient(top, #4F4F4F 0%, #000000 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #4F4F4F 0%, #000000 100%);
 
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4F4F4F), color-stop(1, #000000));
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4F4F4F), color-stop(1, #000000));
 
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top, #4F4F4F 0%, #000000 100%);
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #4F4F4F 0%, #000000 100%);
 
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to bottom, #4F4F4F 0%, #000000 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #4F4F4F 0%, #000000 100%);
 }
 
 .NavBar h1{
 	font-size:36px;
 
-	background: -webkit-linear-gradient(#00FFFF, #333);
+	background: -webkit-linear-gradient(#33CCFF, #888);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 
@@ -166,19 +150,19 @@ background-image: linear-gradient(to bottom, #4F4F4F 0%, #000000 100%);
 #InfoPane {
 	position: relative;
 	overflow: hidden;
-	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.2);
 	width: auto;
 	height:500px;
 	border-style: solid;
     border-width: 2px;
-    border-color: gray;
+    border-color: rgba(51, 204, 255, 1);
     margin: 15px;
 }
 
 #InfoPane h1{
 	font-size:36px;
 
-	background: -webkit-linear-gradient(#00FFFF, #333);
+	background: -webkit-linear-gradient(#33CCFF, #888);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 
@@ -254,8 +238,8 @@ background-image: linear-gradient(to bottom, #4F4F4F 0%, #000000 100%);
 		width:320px;
 		height:630px;
 		position:absolute;
-		background-color:rgba(255, 255, 255, .75);
-		border:10px solid rgba(255, 255, 255, .5);
+		background-color:rgba(0, 0, 0, .45);
+		border:2px solid rgba(51, 204, 255, .75);
 		color:aqua;
 		font-size:72px;
 		left:50%;
