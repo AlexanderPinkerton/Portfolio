@@ -42,7 +42,7 @@ html, body{ background-color:#1a948d; }
 body
 {
 
-	background-image: url("glow.jpg");
+	background-image: url("gauss.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 	width:100%;
@@ -59,7 +59,6 @@ body
 
 header
 {
-
 	margin-top:30px;
 	position:absolute;
 	z-index:5;
@@ -111,39 +110,42 @@ a:hover
 
 .NavBar
 {
-	position: static;
+	position: relative;
 	height: 75px;
-    
-    /* IE10 Consumer Preview */ 
-    background-image: -ms-linear-gradient(top, #4F4F4F 0%, #000000 100%);
-
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(top, #4F4F4F 0%, #000000 100%);
-
-    /* Opera */ 
-    background-image: -o-linear-gradient(top, #4F4F4F 0%, #000000 100%);
-
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4F4F4F), color-stop(1, #000000));
-
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(top, #4F4F4F 0%, #000000 100%);
-
-    /* W3C Markup, IE10 Release Preview */ 
-    background-image: linear-gradient(to bottom, #4F4F4F 0%, #000000 100%);
+    background-color: rgba(0,0,0,.3);
+    overflow: hidden;
 }
 
 .NavBar h1{
-	font-size:36px;
-
+    position: absolute;
+	
 	background: -webkit-linear-gradient(#33CCFF, #888);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-
+    font-size:36px;
 	letter-spacing:-2.5px;
 	margin-left:30px;
-	position: relative;
-	top:25%;
+	
+	top:50%;
+    transform: translateY(-50%);
+}
+
+.LinkBar
+{
+    position: relative;
+    overflow: hidden;
+    float: right;
+    display: inline-block;
+    height: inherit;
+}
+
+.LinkBar a
+{
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 
