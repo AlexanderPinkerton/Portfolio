@@ -119,6 +119,7 @@
 			TweenMax.set( $block, { z:$nz, rotationY:$nrY, rotationX:$nrX, x:$nx, y:$ny, autoAlpha:0} )
 			TweenMax.to( $block, $s, { delay:$d, rotationY:0, rotationX:0, z:0,  ease:Expo.easeInOut} )
 			TweenMax.to( $block, $s-.5, { delay:$d, x:0, y:0, autoAlpha:1, ease:Expo.easeInOut} )
+            mouseZ=-550;
 		}
 		
 		function onMouseMove(event)
@@ -126,7 +127,7 @@
 			mouseX = -(-(window.innerWidth * .5) + event.pageX) * .0015;
 			//mouseY = -(-(window.innerHeight * .5) + event.pageY ) * .01;
 			//mouseZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY ) - 0);
-			mouseZ=-550;
+			//mouseZ=-550;
 		}
 		
 		// loops and sets the carousel 3d properties
