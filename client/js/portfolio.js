@@ -8,6 +8,7 @@ Template.carousel.events({
 'click .carouselItem' : function (e) {
 		console.log(e.currentTarget.id)
 		$(".infoItem").css("display","none");
+        $("#InfoPane").css("visibility","visible");
 		switch(e.currentTarget.id) {
     	case "item1":
         	$("#app1").css("display","inline-block");
