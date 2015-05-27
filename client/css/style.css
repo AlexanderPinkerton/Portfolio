@@ -37,7 +37,11 @@ table {
 
 /* #Prototype Styles
 ================================================== */
-html, body{ background-color:#000000; }
+html{
+    background-color:#000000; 
+    height:100%;
+	min-height: 100%;
+}
 
 body
 {
@@ -50,10 +54,11 @@ body
 	background-image: url("gauss.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
-   
-	background-size:cover;
-	height:100%;
-	min-height:1000px;
+	background-size: cover;
+    
+    padding-bottom: 25px;
+	
+	min-height:100%;
 	overflow-x:hidden;
 	/*overflow:hidden;*/
 	font-family: 'quicksandlight', Helvetica, Arial;
@@ -164,7 +169,7 @@ a:hover
 	border-style: solid;
     border-width: 2px;
     border-color: rgba(51, 204, 255, 1);
-    margin: 15px;
+    margin: 0px 20px 0px 20px;
 }
 
 #InfoPane h1{
