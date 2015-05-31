@@ -1,7 +1,3 @@
-Template.carousel.helpers({
-
-});
-
 
 Template.carousel.events({
 
@@ -36,5 +32,54 @@ Template.carousel.events({
 });
 
 
+Template.InfoPane.events({
+   
+'click .picture' : function (e) {
+  
+    document.getElementById("wrapper").setAttribute("style", "-webkit-filter: blur(20px);-moz-filter: blur(15px);-o-filter: blur(15px);-ms-filter: blur(15px);filter: blur(15px);opacity: 0.95;");
+    
+    var newDiv = document.createElement("div");
+    newDiv.className = "pictureLargeView";
+    newDiv.style.backgroundImage = "url(" + e.currentTarget.src + ")";
+    document.querySelector(".NavBar").appendChild(newDiv);
+    //newDiv.setAttribute("style", "-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none;opacity: 1;");
+
+    setTimeout(function(){window.bigPicture = true},500);
+               
+    
+     /*                          
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    opacity: 0.95;
+    */
+  
+}
+    
+    
+});
+
+
+Template.outer.events({
+   
+'click' : function (e) {
+ 
+    if(window.bigPicture){
+        var view = document.querySelector(".pictureLargeView");
+        view.parentElement.removeChild(view);
+        
+        //document.body.setAttribute("style", "-webkit-filter: blur(20px);-moz-filter: blur(15px);-o-filter: blur(15px);-ms-filter: blur(15px);filter: blur(15px);opacity: 0.95;");
+        document.getElementById("wrapper").setAttribute("style", "-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none;opacity: 1;");
+          
+        
+        window.bigPicture = false;
+    }
+    
+}
+    
+    
+});
 
 

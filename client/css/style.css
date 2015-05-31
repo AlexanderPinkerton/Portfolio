@@ -212,6 +212,19 @@ a:hover
     margin-right: auto;
 }
 
+.pictureLargeView{
+    position: fixed;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 75px;
+    width: 55%;
+    height: 85%;
+    margin: 0 0 0 -250px;
+    left: 50%;
+    z-index: 9999;
+}
+
 
 
 /*================================================================================================================================*/
