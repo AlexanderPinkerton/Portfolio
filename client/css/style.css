@@ -162,7 +162,7 @@ a:hover
 #InfoPane {
     visibility: hidden;
 	position: relative;
-	overflow:auto;
+	overflow:hidden;
 	background-color: rgba(0,0,0,.2);
 	width: auto;
 	height:auto;

@@ -59,29 +59,9 @@
 			
 			for ( var i = 0; i < itemLength; i++ )
 			{
-				//var img = new Image();
-				//img.src = imageSources[i]
 				var $item = item.eq(i);
 				var $block = $item.find('.carouselItemInner');
-				//imageContainers[i] = $block;
-
-				/*
-				img.onload = function(){
- 				 // image  has been loaded
- 				 	$block.css("width",img.width);
-					$block.css("height",img.height);
-					console.log(i);
-				};
-				*/
-
-				/*
-				var timer = window.setTimeout(function(){
-					$block.css("width",img.width);
-					$block.css("height",img.height)
-				}, 500);
-				*/
-				//$block.css("width",img.width);
-				//$block.css("height",img.height)
+		
 				
         //thanks @chrisgannon!        
         TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
