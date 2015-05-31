@@ -28,6 +28,9 @@ Template.carousel.events({
             document.getElementById("app3").style.display = "inline-block";
         break;
 		}
+    
+        document.getElementById("InfoPane").scrollIntoView(true);    
+    
     }
 });
 
@@ -42,20 +45,7 @@ Template.InfoPane.events({
     newDiv.className = "pictureLargeView";
     newDiv.style.backgroundImage = "url(" + e.currentTarget.src + ")";
     document.querySelector(".NavBar").appendChild(newDiv);
-    //newDiv.setAttribute("style", "-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none;opacity: 1;");
-
     setTimeout(function(){window.bigPicture = true},500);
-               
-    
-     /*                          
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-    opacity: 0.95;
-    */
-  
 }
     
     
@@ -70,9 +60,7 @@ Template.outer.events({
         var view = document.querySelector(".pictureLargeView");
         view.parentElement.removeChild(view);
         
-        //document.body.setAttribute("style", "-webkit-filter: blur(20px);-moz-filter: blur(15px);-o-filter: blur(15px);-ms-filter: blur(15px);filter: blur(15px);opacity: 0.95;");
-        document.getElementById("wrapper").setAttribute("style", "-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none;opacity: 1;");
-          
+        document.getElementById("wrapper").setAttribute("style", "-webkit-filter: none;-moz-filter: none;-o-filter: none;-ms-filter: none;filter: none;opacity: 1;");  
         
         window.bigPicture = false;
     }
