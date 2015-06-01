@@ -79,8 +79,6 @@ Template.outer.events({
     window.bigPicture = true;
 }
     
-    
-    
 });
 
 

@@ -218,9 +218,9 @@ a:hover
     background-position: center;
     background-repeat: no-repeat;
     top: 75px;
-    width: 55%;
+    width: 54%;
     height: 85%;
-    margin: 0 0 0 -250px;
+    margin: 0 0 0 -27%;
     left: 50%;
     z-index: 9999;
 }
@@ -260,7 +260,7 @@ a:hover
 	{
 		position:absolute;
 		margin-left:-500px;
-		margin-top:-500px;
+		margin-top:-400px;
 		left:50%;
 		top:50%;
 		width:1000px;
@@ -270,7 +270,7 @@ a:hover
 	.carouselItem
 	{
 		width:320px;
-		height:230px;
+		height:0px;
 		position:absolute;
 		left:50%;
 		top:50%;
